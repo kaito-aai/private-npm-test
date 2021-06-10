@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SampleService } from 'projects/test-lib/src/lib';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'my-app';
+  message = 'my-app';
+
+  constructor(private ss: SampleService) {}
+
+  changeMessage() {
+    this.message = this.ss.getMessage();
+  }
 }
