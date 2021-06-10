@@ -11,7 +11,11 @@
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "test-lib": ["lib/index.ts"],
+    }
   },
   "exclude": [
     "src/test.ts",

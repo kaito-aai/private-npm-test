@@ -3,7 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class TestLibService {
-
+export class SampleService {
   constructor() { }
+
+  getMessage(): string {
+    return "Hello";
+  }
 }
